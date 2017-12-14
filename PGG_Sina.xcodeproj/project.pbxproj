@@ -7,14 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03462A51F11684601F62AE90 /* libPods-PGG_Sina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 075ADA7116FFDDE3D4EE5624 /* libPods-PGG_Sina.a */; };
 		745AA0C51FE0B60B0092CA5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA0C41FE0B60B0092CA5A /* AppDelegate.m */; };
-		745AA0C81FE0B60B0092CA5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA0C71FE0B60B0092CA5A /* ViewController.m */; };
 		745AA0CB1FE0B60B0092CA5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745AA0C91FE0B60B0092CA5A /* Main.storyboard */; };
 		745AA0CD1FE0B60B0092CA5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745AA0CC1FE0B60B0092CA5A /* Assets.xcassets */; };
 		745AA0D01FE0B60B0092CA5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745AA0CE1FE0B60B0092CA5A /* LaunchScreen.storyboard */; };
 		745AA0D31FE0B60B0092CA5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA0D21FE0B60B0092CA5A /* main.m */; };
 		745AA0DD1FE0B60C0092CA5A /* PGG_SinaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA0DC1FE0B60C0092CA5A /* PGG_SinaTests.m */; };
 		745AA0E81FE0B60C0092CA5A /* PGG_SinaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA0E71FE0B60C0092CA5A /* PGG_SinaUITests.m */; };
+		745AA0FB1FE0D0070092CA5A /* PGGWeiBoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA0FA1FE0D0070092CA5A /* PGGWeiBoViewController.m */; };
+		745AA0FE1FE0D0210092CA5A /* PGGNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA0FD1FE0D0210092CA5A /* PGGNewsViewController.m */; };
+		745AA1011FE0D0370092CA5A /* PGGFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA1001FE0D0370092CA5A /* PGGFindViewController.m */; };
+		745AA1041FE0D04F0092CA5A /* PGGMyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA1031FE0D04F0092CA5A /* PGGMyViewController.m */; };
+		745AA1071FE0D1190092CA5A /* PGGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA1061FE0D1190092CA5A /* PGGNavigationController.m */; };
+		745AA10A1FE0D1450092CA5A /* PGGTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA1091FE0D1450092CA5A /* PGGTabBarController.m */; };
+		745AA10D1FE0D17C0092CA5A /* PGGTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA10C1FE0D17C0092CA5A /* PGGTestViewController.m */; };
+		745AA1121FE118170092CA5A /* UIView+PGGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA1111FE118170092CA5A /* UIView+PGGExtension.m */; };
+		745AA1171FE11FD60092CA5A /* PGGAddTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 745AA1161FE11FD60092CA5A /* PGGAddTabBar.m */; };
+		746392FD1FE1FACD00799A07 /* UIBarButtonItem+PGGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 746392FC1FE1FACD00799A07 /* UIBarButtonItem+PGGExtension.m */; };
+		746393011FE20DA500799A07 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 746393001FE20DA400799A07 /* FXBlurView.m */; };
+		746393051FE2619A00799A07 /* PGGSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 746393041FE2619A00799A07 /* PGGSearchView.m */; };
+		7463930F1FE2699000799A07 /* UIView+LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 746393071FE2699000799A07 /* UIView+LLSegmentBar.m */; };
+		746393101FE2699000799A07 /* LLSegmentBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7463930B1FE2699000799A07 /* LLSegmentBarConfig.m */; };
+		746393111FE2699000799A07 /* LLSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7463930D1FE2699000799A07 /* LLSegmentBar.m */; };
+		746393121FE2699000799A07 /* LLSegmentBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7463930E1FE2699000799A07 /* LLSegmentBarVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075ADA7116FFDDE3D4EE5624 /* libPods-PGG_Sina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PGG_Sina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		745AA0C01FE0B60B0092CA5A /* PGG_Sina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PGG_Sina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		745AA0C31FE0B60B0092CA5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		745AA0C41FE0B60B0092CA5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		745AA0C61FE0B60B0092CA5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		745AA0C71FE0B60B0092CA5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		745AA0CA1FE0B60B0092CA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		745AA0CC1FE0B60B0092CA5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		745AA0CF1FE0B60B0092CA5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +66,41 @@
 		745AA0E31FE0B60C0092CA5A /* PGG_SinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PGG_SinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		745AA0E71FE0B60C0092CA5A /* PGG_SinaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGG_SinaUITests.m; sourceTree = "<group>"; };
 		745AA0E91FE0B60C0092CA5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745AA0F91FE0D0070092CA5A /* PGGWeiBoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGWeiBoViewController.h; sourceTree = "<group>"; };
+		745AA0FA1FE0D0070092CA5A /* PGGWeiBoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGWeiBoViewController.m; sourceTree = "<group>"; };
+		745AA0FC1FE0D0210092CA5A /* PGGNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGNewsViewController.h; sourceTree = "<group>"; };
+		745AA0FD1FE0D0210092CA5A /* PGGNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGNewsViewController.m; sourceTree = "<group>"; };
+		745AA0FF1FE0D0370092CA5A /* PGGFindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGFindViewController.h; sourceTree = "<group>"; };
+		745AA1001FE0D0370092CA5A /* PGGFindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGFindViewController.m; sourceTree = "<group>"; };
+		745AA1021FE0D04F0092CA5A /* PGGMyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGMyViewController.h; sourceTree = "<group>"; };
+		745AA1031FE0D04F0092CA5A /* PGGMyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGMyViewController.m; sourceTree = "<group>"; };
+		745AA1051FE0D1190092CA5A /* PGGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGNavigationController.h; sourceTree = "<group>"; };
+		745AA1061FE0D1190092CA5A /* PGGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGNavigationController.m; sourceTree = "<group>"; };
+		745AA1081FE0D1450092CA5A /* PGGTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGTabBarController.h; sourceTree = "<group>"; };
+		745AA1091FE0D1450092CA5A /* PGGTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGTabBarController.m; sourceTree = "<group>"; };
+		745AA10B1FE0D17C0092CA5A /* PGGTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGTestViewController.h; sourceTree = "<group>"; };
+		745AA10C1FE0D17C0092CA5A /* PGGTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGTestViewController.m; sourceTree = "<group>"; };
+		745AA1101FE118170092CA5A /* UIView+PGGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+PGGExtension.h"; sourceTree = "<group>"; };
+		745AA1111FE118170092CA5A /* UIView+PGGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+PGGExtension.m"; sourceTree = "<group>"; };
+		745AA1151FE11FD60092CA5A /* PGGAddTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGAddTabBar.h; sourceTree = "<group>"; };
+		745AA1161FE11FD60092CA5A /* PGGAddTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGAddTabBar.m; sourceTree = "<group>"; };
+		746392FB1FE1FACD00799A07 /* UIBarButtonItem+PGGExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+PGGExtension.h"; sourceTree = "<group>"; };
+		746392FC1FE1FACD00799A07 /* UIBarButtonItem+PGGExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+PGGExtension.m"; sourceTree = "<group>"; };
+		746392FE1FE1FEB900799A07 /* PGGPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGPrefixHeader.pch; sourceTree = "<group>"; };
+		746392FF1FE20DA400799A07 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		746393001FE20DA400799A07 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		746393031FE2619A00799A07 /* PGGSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PGGSearchView.h; sourceTree = "<group>"; };
+		746393041FE2619A00799A07 /* PGGSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PGGSearchView.m; sourceTree = "<group>"; };
+		746393071FE2699000799A07 /* UIView+LLSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LLSegmentBar.m"; sourceTree = "<group>"; };
+		746393081FE2699000799A07 /* LLSegmentBarConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBarConfig.h; sourceTree = "<group>"; };
+		746393091FE2699000799A07 /* LLSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBar.h; sourceTree = "<group>"; };
+		7463930A1FE2699000799A07 /* LLSegmentBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLSegmentBarVC.h; sourceTree = "<group>"; };
+		7463930B1FE2699000799A07 /* LLSegmentBarConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBarConfig.m; sourceTree = "<group>"; };
+		7463930C1FE2699000799A07 /* UIView+LLSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LLSegmentBar.h"; sourceTree = "<group>"; };
+		7463930D1FE2699000799A07 /* LLSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBar.m; sourceTree = "<group>"; };
+		7463930E1FE2699000799A07 /* LLSegmentBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLSegmentBarVC.m; sourceTree = "<group>"; };
+		D7E5FA08C830D6C0521F4B1D /* Pods-PGG_Sina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGG_Sina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PGG_Sina/Pods-PGG_Sina.debug.xcconfig"; sourceTree = "<group>"; };
+		E9E8A6813938D19F5D4126C2 /* Pods-PGG_Sina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGG_Sina.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGG_Sina/Pods-PGG_Sina.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03462A51F11684601F62AE90 /* libPods-PGG_Sina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0987E9B63A889732234B54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				075ADA7116FFDDE3D4EE5624 /* libPods-PGG_Sina.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C15DB85240A4C79EE632B97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7E5FA08C830D6C0521F4B1D /* Pods-PGG_Sina.debug.xcconfig */,
+				E9E8A6813938D19F5D4126C2 /* Pods-PGG_Sina.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		745AA0B71FE0B60B0092CA5A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +153,8 @@
 				745AA0DB1FE0B60C0092CA5A /* PGG_SinaTests */,
 				745AA0E61FE0B60C0092CA5A /* PGG_SinaUITests */,
 				745AA0C11FE0B60B0092CA5A /* Products */,
+				5C15DB85240A4C79EE632B97 /* Pods */,
+				1E0987E9B63A889732234B54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +171,12 @@
 		745AA0C21FE0B60B0092CA5A /* PGG_Sina */ = {
 			isa = PBXGroup;
 			children = (
-				745AA0C31FE0B60B0092CA5A /* AppDelegate.h */,
-				745AA0C41FE0B60B0092CA5A /* AppDelegate.m */,
-				745AA0C61FE0B60B0092CA5A /* ViewController.h */,
-				745AA0C71FE0B60B0092CA5A /* ViewController.m */,
-				745AA0C91FE0B60B0092CA5A /* Main.storyboard */,
-				745AA0CC1FE0B60B0092CA5A /* Assets.xcassets */,
-				745AA0CE1FE0B60B0092CA5A /* LaunchScreen.storyboard */,
-				745AA0D11FE0B60B0092CA5A /* Info.plist */,
-				745AA0D21FE0B60B0092CA5A /* main.m */,
+				746393061FE2699000799A07 /* LLSegment */,
+				745AA10E1FE1177F0092CA5A /* Tool */,
+				745AA0F81FE0CF6A0092CA5A /* SubController */,
+				745AA0F71FE0CF570092CA5A /* MainTabAndNav */,
+				745AA0F61FE0B6380092CA5A /* APPDelegate */,
+				745AA0F51FE0B6120092CA5A /* source */,
 			);
 			path = PGG_Sina;
 			sourceTree = "<group>";
@@ -132,6 +199,112 @@
 			path = PGG_SinaUITests;
 			sourceTree = "<group>";
 		};
+		745AA0F51FE0B6120092CA5A /* source */ = {
+			isa = PBXGroup;
+			children = (
+				745AA0C91FE0B60B0092CA5A /* Main.storyboard */,
+				745AA0CC1FE0B60B0092CA5A /* Assets.xcassets */,
+				745AA0CE1FE0B60B0092CA5A /* LaunchScreen.storyboard */,
+				745AA0D11FE0B60B0092CA5A /* Info.plist */,
+				745AA0D21FE0B60B0092CA5A /* main.m */,
+				746392FE1FE1FEB900799A07 /* PGGPrefixHeader.pch */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		745AA0F61FE0B6380092CA5A /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				745AA0C31FE0B60B0092CA5A /* AppDelegate.h */,
+				745AA0C41FE0B60B0092CA5A /* AppDelegate.m */,
+			);
+			path = APPDelegate;
+			sourceTree = "<group>";
+		};
+		745AA0F71FE0CF570092CA5A /* MainTabAndNav */ = {
+			isa = PBXGroup;
+			children = (
+				745AA1131FE11C1D0092CA5A /* PGGTabBar */,
+				745AA1051FE0D1190092CA5A /* PGGNavigationController.h */,
+				745AA1061FE0D1190092CA5A /* PGGNavigationController.m */,
+				745AA1081FE0D1450092CA5A /* PGGTabBarController.h */,
+				745AA1091FE0D1450092CA5A /* PGGTabBarController.m */,
+			);
+			path = MainTabAndNav;
+			sourceTree = "<group>";
+		};
+		745AA0F81FE0CF6A0092CA5A /* SubController */ = {
+			isa = PBXGroup;
+			children = (
+				746393021FE2616100799A07 /* 搜索框 */,
+				745AA1141FE11C2F0092CA5A /* 毛玻璃页 */,
+				745AA0F91FE0D0070092CA5A /* PGGWeiBoViewController.h */,
+				745AA0FA1FE0D0070092CA5A /* PGGWeiBoViewController.m */,
+				745AA0FC1FE0D0210092CA5A /* PGGNewsViewController.h */,
+				745AA0FD1FE0D0210092CA5A /* PGGNewsViewController.m */,
+				745AA0FF1FE0D0370092CA5A /* PGGFindViewController.h */,
+				745AA1001FE0D0370092CA5A /* PGGFindViewController.m */,
+				745AA1021FE0D04F0092CA5A /* PGGMyViewController.h */,
+				745AA1031FE0D04F0092CA5A /* PGGMyViewController.m */,
+				745AA10B1FE0D17C0092CA5A /* PGGTestViewController.h */,
+				745AA10C1FE0D17C0092CA5A /* PGGTestViewController.m */,
+			);
+			path = SubController;
+			sourceTree = "<group>";
+		};
+		745AA10E1FE1177F0092CA5A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				745AA1101FE118170092CA5A /* UIView+PGGExtension.h */,
+				745AA1111FE118170092CA5A /* UIView+PGGExtension.m */,
+				746392FB1FE1FACD00799A07 /* UIBarButtonItem+PGGExtension.h */,
+				746392FC1FE1FACD00799A07 /* UIBarButtonItem+PGGExtension.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		745AA1131FE11C1D0092CA5A /* PGGTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				745AA1151FE11FD60092CA5A /* PGGAddTabBar.h */,
+				745AA1161FE11FD60092CA5A /* PGGAddTabBar.m */,
+			);
+			path = PGGTabBar;
+			sourceTree = "<group>";
+		};
+		745AA1141FE11C2F0092CA5A /* 毛玻璃页 */ = {
+			isa = PBXGroup;
+			children = (
+				746392FF1FE20DA400799A07 /* FXBlurView.h */,
+				746393001FE20DA400799A07 /* FXBlurView.m */,
+			);
+			path = "毛玻璃页";
+			sourceTree = "<group>";
+		};
+		746393021FE2616100799A07 /* 搜索框 */ = {
+			isa = PBXGroup;
+			children = (
+				746393031FE2619A00799A07 /* PGGSearchView.h */,
+				746393041FE2619A00799A07 /* PGGSearchView.m */,
+			);
+			path = "搜索框";
+			sourceTree = "<group>";
+		};
+		746393061FE2699000799A07 /* LLSegment */ = {
+			isa = PBXGroup;
+			children = (
+				746393091FE2699000799A07 /* LLSegmentBar.h */,
+				7463930D1FE2699000799A07 /* LLSegmentBar.m */,
+				746393081FE2699000799A07 /* LLSegmentBarConfig.h */,
+				7463930B1FE2699000799A07 /* LLSegmentBarConfig.m */,
+				7463930A1FE2699000799A07 /* LLSegmentBarVC.h */,
+				7463930E1FE2699000799A07 /* LLSegmentBarVC.m */,
+				7463930C1FE2699000799A07 /* UIView+LLSegmentBar.h */,
+				746393071FE2699000799A07 /* UIView+LLSegmentBar.m */,
+			);
+			path = LLSegment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +312,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 745AA0EC1FE0B60C0092CA5A /* Build configuration list for PBXNativeTarget "PGG_Sina" */;
 			buildPhases = (
+				34D7A8438F77F55677F0D72C /* [CP] Check Pods Manifest.lock */,
 				745AA0BC1FE0B60B0092CA5A /* Sources */,
 				745AA0BD1FE0B60B0092CA5A /* Frameworks */,
 				745AA0BE1FE0B60B0092CA5A /* Resources */,
+				B5BF7AD1AED6F565031F8DBB /* [CP] Embed Pods Frameworks */,
+				D9B55FFA16A0710BD046F798 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,13 +436,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34D7A8438F77F55677F0D72C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PGG_Sina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BF7AD1AED6F565031F8DBB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGG_Sina/Pods-PGG_Sina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9B55FFA16A0710BD046F798 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PGG_Sina/Pods-PGG_Sina-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PGG_Sina/Pods-PGG_Sina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		745AA0BC1FE0B60B0092CA5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				745AA0C81FE0B60B0092CA5A /* ViewController.m in Sources */,
+				746393111FE2699000799A07 /* LLSegmentBar.m in Sources */,
+				745AA1011FE0D0370092CA5A /* PGGFindViewController.m in Sources */,
+				745AA10A1FE0D1450092CA5A /* PGGTabBarController.m in Sources */,
+				745AA1041FE0D04F0092CA5A /* PGGMyViewController.m in Sources */,
+				746393121FE2699000799A07 /* LLSegmentBarVC.m in Sources */,
+				745AA0FE1FE0D0210092CA5A /* PGGNewsViewController.m in Sources */,
+				7463930F1FE2699000799A07 /* UIView+LLSegmentBar.m in Sources */,
+				746393101FE2699000799A07 /* LLSegmentBarConfig.m in Sources */,
 				745AA0D31FE0B60B0092CA5A /* main.m in Sources */,
+				745AA0FB1FE0D0070092CA5A /* PGGWeiBoViewController.m in Sources */,
+				746392FD1FE1FACD00799A07 /* UIBarButtonItem+PGGExtension.m in Sources */,
+				745AA10D1FE0D17C0092CA5A /* PGGTestViewController.m in Sources */,
+				745AA1121FE118170092CA5A /* UIView+PGGExtension.m in Sources */,
+				746393011FE20DA500799A07 /* FXBlurView.m in Sources */,
+				745AA1171FE11FD60092CA5A /* PGGAddTabBar.m in Sources */,
+				746393051FE2619A00799A07 /* PGGSearchView.m in Sources */,
+				745AA1071FE0D1190092CA5A /* PGGNavigationController.m in Sources */,
 				745AA0C51FE0B60B0092CA5A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +674,14 @@
 		};
 		745AA0ED1FE0B60C0092CA5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E5FA08C830D6C0521F4B1D /* Pods-PGG_Sina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5K6RS22WJ;
-				INFOPLIST_FILE = PGG_Sina/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PGG_Sina/source/PGGPrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/PGG_Sina/source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.penggege.PGG-Sina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -442,11 +691,14 @@
 		};
 		745AA0EE1FE0B60C0092CA5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E8A6813938D19F5D4126C2 /* Pods-PGG_Sina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5K6RS22WJ;
-				INFOPLIST_FILE = PGG_Sina/Info.plist;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PGG_Sina/source/PGGPrefixHeader.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/PGG_Sina/source/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.penggege.PGG-Sina";
 				PRODUCT_NAME = "$(TARGET_NAME)";
