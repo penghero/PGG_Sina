@@ -70,7 +70,7 @@
 ```
 2.自定义PGGTabBarController 继承与UITabBarController
 2.1添加子控制器
-
+```
     PGGWeiBoViewController *home = [[PGGWeiBoViewController alloc]init];
     [self addChildViewController:home title:@"微博" image:@"tabbar_home" selImage:@"tabbar_home_selected"];
     
@@ -82,7 +82,8 @@
     
     PGGMyViewController *profile = [[PGGMyViewController alloc] init];
     [self addChildViewController:profile title:@"我" image:@"tabbar_profile" selImage:@"tabbar_profile_selected"];
-子控制器方法
+ ```
+*子控制器方法
 ```
  - (void)addChildViewController:(UIViewController *)childVc  title:(NSString *)title image:(NSString *)image selImage:(NSString *)selImage{
     static NSInteger index = 0;
