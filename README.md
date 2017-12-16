@@ -120,7 +120,32 @@
  -(void)tabBarDidClickPlusButton:(PGGAddTabBar *)tabBar 
 ```
 2.5 最后 在APPDelegate中 将其设定为根控制器即可 自定义TabBarController完成
-
+## 补充
+当自定义的按钮超出TabBar高度后 超出部分不响应事件 处理办法为重写 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event方法 
+```
+ - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+/*这一个判断是关键，不判断的话push到其他页面，点击自定义按钮的位置也是会有反应的
+ *self.isHidden == NO 说明当前页面是有tabbar的，那么肯定是在导航控制器的根控制器页面
+ *在导航控制器根控制器页面，那么我们就需要判断手指点击的位置是否在自定义按钮身上
+ *是的话让自定义按钮自己处理点击事件，不是的话让系统去处理点击事件就可以了
+ */
+     if (self.isHidden == NO) {
+         /* 将当前tabbar的触摸点转换坐标系，转换到发布按钮的身上，生成一个新的点 */
+         CGPoint newPoint = [self convertPoint:point toView:self.plusBtn];
+         /* 判断如果这个新的点是在自定义按钮身上，处理突出部分的自定义按钮*/
+         if ( [self.plusBtn pointInside:newPoint withEvent:event]) {
+             return self.plusBtn;
+         }else{
+             /*如果点不在自定义按钮身上，直接让系统处理*/
+             return [super hitTest:point withEvent:event];
+         }
+     }
+     else {
+         /* tabbar隐藏后，那么说明已经push到其他的页面了，这个时候还是让系统去判断最合适的view处理*/
+         return [super hitTest:point withEvent:event];
+     }
+  }
+```
 ## 自定义NavigationController讲解
 1.自定义PGGNavigationController继承与UINavigationController
 2.重写-(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated 方法处理跳转后 隐藏TabBarController 以及返回按钮的定义等事件
