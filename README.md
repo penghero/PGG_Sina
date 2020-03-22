@@ -211,4 +211,29 @@
 有问题 请联系 896733185@qq.com
 # 感谢 
 感谢GitHub上开源大神 
+# 新版xcode跑不起来项目解决办法
+原因：Xcode 10 默认使用的build system是New build system，与Xcode9不同导致
+
+1）第一种方法 不修改build system
+根据error 日志，script phase “[CP] Copy Pods Resources”，而且与output有关，应该是使用了cocoapods导致的，尝试删除该项目target-Copy Pods Resources-Output Files，成功解决问题。选中项目target -> Build phase -> Copy Pods Resources -> Output Files -> 移除TARGETBUILDDIR/
+TARGET BUILDD	IR/{UNLOCALIZED_RESOURCES_FOLDER_PATH} 然后重新编译，OK 。
+
+用这种方式紧接着会有下面的错误：
+error: Cycle in dependencies between targets ‘yooweiExtension’ and ‘yoowei’; building could produce unreliable results.
+Cycle path: yooweiExtension → yoowei → yooweiExtension
+Cycle details:
+→ Target ‘yooweiExtension’: CodeSign /Users/galahad/Library/Developer/Xcode/DerivedData/yoowei-drnrntneloepunakcqbcdycudqeh/Build/Products/Debug-iphoneos/yooweiExtension.appex
+
+○ Target ‘yooweiExtension’: ProcessProductPackaging /Users/galahad/Library/Developer/Xcode/DerivedData/yoowei-drnrntneloepunakcqbcdycudqeh/Build/Intermediates.noindex/yoowei.build/Debug-iphoneos/yooweiExtension.build/yooweiExtension.appex.xcent
+
+○ Target ‘yooweiExtension’ has target dependency on Target ‘yoowei’
+
+→ Target ‘yoowei’ has target dependency on Target ‘yooweiExtension’
+
+○ That command depends on command in Target ‘yooweiExtension’: script phase “[CP] Check Pods Manifest.lock”
+
+对应的解决方案：选中项目target -> Build phase -> Target Dependencies 去掉相互的依赖即可
+
+2）第二种方法 修改build system （个人感觉这种方式较好，不会每个项目搞一遍）
+在Xcode菜单栏 -> File -> Workspace Setting，将build system修改为legacy build system，然后clean后编译。
 
